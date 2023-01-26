@@ -1,0 +1,7 @@
+category_encoders==2.5.1.post0
+numpy==1.23.5
+pandas==1.5.2
+PyYAML==6.0
+setuptools==61.2.0
+torch==1.13.0
+tqdm==4.64.0

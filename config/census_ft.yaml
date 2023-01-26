@@ -1,0 +1,27 @@
+
+#type: args
+
+train:
+  epochs: 250
+  batch_size: 64 
+  lr: 0.0005
+
+diffusion:
+  layers: 4 
+  channels: 128
+  nheads: 4 
+  diffusion_embedding_dim: 128
+  beta_start: 0.0001
+  beta_end: 0.5
+  num_steps: 100
+  schedule: "quad"
+  mixed: True
+  token_emb_dim: 8
+ 
+model:
+  is_unconditional: 0
+  timeemb: 128
+  featureemb: 8
+  target_strategy: "random"
+  mixed: True
+  token_emb_dim: 8
