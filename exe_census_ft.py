@@ -5,7 +5,7 @@ import json
 import yaml
 import os
 
-from src.main_model_table_ft import CSDIT
+from src.main_model_table_ft import TabCSDI
 from src.utils_table import train, evaluate_ft
 
 from dataset_census_ft import get_dataloader
@@ -48,7 +48,7 @@ train_loader, valid_loader, test_loader = get_dataloader(
     missing_ratio=config["model"]["test_missing_ratio"],
 )
 exe_name = "census"
-model = CSDIT(exe_name, config, args.device).to(args.device)
+model = TabCSDI(exe_name, config, args.device).to(args.device)
 
 if args.modelfolder == "":
     train(

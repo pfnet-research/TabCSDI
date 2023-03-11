@@ -5,7 +5,7 @@ import json
 import yaml
 import os
 
-from src.main_model_table import CSDIT
+from src.main_model_table import TabCSDI
 from src.utils_table import train, evaluate
 from dataset_breastD import get_dataloader
 
@@ -49,7 +49,7 @@ train_loader, valid_loader, test_loader = get_dataloader(
     missing_ratio=config["model"]["test_missing_ratio"],
 )
 
-model = CSDIT(config, args.device).to(args.device)
+model = TabCSDI(config, args.device).to(args.device)
 
 if args.modelfolder == "":
     train(

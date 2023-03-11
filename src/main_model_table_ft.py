@@ -357,7 +357,7 @@ class CSDI_base(nn.Module):
         return samples, observed_data, target_mask, observed_mask, observed_tp
 
 
-class CSDIT(CSDI_base):
+class TabCSDI(CSDI_base):
     def __init__(self, exe_name, config, device, target_dim=1):
         super().__init__(exe_name, target_dim, config, device)
 

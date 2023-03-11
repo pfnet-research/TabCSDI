@@ -230,9 +230,9 @@ class CSDI_base(nn.Module):
         return samples, observed_data, target_mask, observed_mask, observed_tp
 
 
-class CSDIT(CSDI_base):
+class TabCSDI(CSDI_base):
     def __init__(self, config, device, target_dim=1):
-        super(CSDIT, self).__init__(target_dim, config, device)
+        super(TabCSDI, self).__init__(target_dim, config, device)
 
     def process_data(self, batch):
         # Insert K=1 axis. All mask now with shape (B, 1, L).
