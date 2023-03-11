@@ -1,4 +1,4 @@
-# Diffusion models for missing value imputation in tabular data
+# TabCSDI: Diffusion models for missing value imputation in tabular data
 
 This is the repo for the workshop paper: [Diffusion models for missing value imputation in tabular data | OpenReview](https://openreview.net/forum?id=4q9kFrXC2Ae).
 
