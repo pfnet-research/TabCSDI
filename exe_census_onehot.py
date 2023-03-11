@@ -10,7 +10,7 @@ from src.utils_table import train, evaluate_onehot
 
 from dataset_census_onehot import get_dataloader
 
-parser = argparse.ArgumentParser(description="CSDI_T")
+parser = argparse.ArgumentParser(description="TabCSDI")
 parser.add_argument("--config", type=str, default="census_onehot_analog.yaml")
 parser.add_argument("--device", default="cuda", help="Device")
 parser.add_argument("--seed", type=int, default=1)
