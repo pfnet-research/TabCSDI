@@ -5,12 +5,12 @@ import json
 import yaml
 import os
 
-from src.main_model_table import CSDIT
+from src.main_model_table import TabCSDI
 from src.utils_table import train, evaluate_onehot
 
 from dataset_census_onehot import get_dataloader
 
-parser = argparse.ArgumentParser(description="CSDI_T")
+parser = argparse.ArgumentParser(description="TabCSDI")
 parser.add_argument("--config", type=str, default="census_onehot_analog.yaml")
 parser.add_argument("--device", default="cuda", help="Device")
 parser.add_argument("--seed", type=int, default=1)
@@ -50,7 +50,7 @@ train_loader, valid_loader, test_loader = get_dataloader(
     missing_ratio=config["model"]["test_missing_ratio"],
 )
 exe_name = "census"
-model = CSDIT(config, args.device).to(args.device)
+model = TabCSDI(config, args.device).to(args.device)
 
 if args.modelfolder == "":
     train(

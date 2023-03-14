@@ -1,4 +1,4 @@
-# Diffusion models for missing value imputation in tabular data
+# TabCSDI: Diffusion models for missing value imputation in tabular data
 
 This is the repo for the workshop paper: [Diffusion models for missing value imputation in tabular data | OpenReview](https://openreview.net/forum?id=4q9kFrXC2Ae).
 
@@ -39,5 +39,15 @@ python exe_census_onehot.py
 
 The code repo is built upon the [CSDI repo](https://github.com/ermongroup/CSDI).
 
+## Reference
+If you find our code useful or use it in your work, please cite the following paper:
 
+```
+@inproceedings{tashiro2021csdi,
+  title={Diffusion models for missing value imputation in tabular data},
+  author={Zheng, Shuhan and Charoenphakdee, Nontawat},
+  booktitle={NeurIPS Table Representation Learning (TRL) Workshop},
+  year={2022}
+}
+```
 
