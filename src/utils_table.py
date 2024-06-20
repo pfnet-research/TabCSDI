@@ -162,7 +162,7 @@ def evaluate(model, test_loader, nsample=100, scaler=1, mean_scaler=0, foldernam
                     refresh=True,
                 )
 
-            # Use folloing code for saving generated results.
+            # Use following code for saving generated results.
             # with open(
             #     foldername + "/generated_outputs_nsample" + str(nsample) + ".pk", "wb"
             # ) as f:
